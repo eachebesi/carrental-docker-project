@@ -1,0 +1,8 @@
+# retag docker image 
+docker tag rentzone 964083089199.dkr.ecr.us-east-1.amazonaws.com/rentzone
+
+# login to ecr
+aws ecr get-login-password | docker login --username AWS --password-stdin 964083089199.dkr.ecr.us-east-1.amazonaws.com
+
+# push docker image to ecr repository 
+docker push 964083089199.dkr.ecr.us-east-1.amazonaws.com/rentzone
