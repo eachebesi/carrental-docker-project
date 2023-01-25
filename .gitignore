@@ -1,3 +1,4 @@
 Dockerfile-referece
 build_image.sh
-rentzone_env
+rentzone.env
+text.txt
